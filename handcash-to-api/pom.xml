@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.hackunix.handcash</groupId>
+    <artifactId>handcash-to</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>handcash-to-api</artifactId>
+  <name>handcash.to JAX-RS objects &amp; resources</name>
+  <dependencies>
+    <dependency>
+      <groupId>javax.ws.rs</groupId>
+      <artifactId>javax.ws.rs-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.hackunix.handcash</groupId>
+      <artifactId>handcash-io-api</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+    	<groupId>org.bitcoinj</groupId>
+    	<artifactId>bitcoinj-core</artifactId>
+    	<version>0.14.7</version>
+    </dependency>
+  </dependencies>
+</project>
