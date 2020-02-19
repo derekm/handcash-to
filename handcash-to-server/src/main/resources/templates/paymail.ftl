@@ -10,7 +10,7 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="paymail.css">
     <script type="application/javascript">
 window.onload = function() {
     setupCopyHandler ('legacyCopyLabel','legacy');
@@ -66,10 +66,10 @@ function updateStatus (message, type) {
 <body>
 <div id="popup">
     <div id="logo">
-        <a href="https://www.handcash.io" target="_blank"><img src="images/handcash-white-wide.png" height="24" width="auto"></a>
+        <img src="https://www.moneybutton.com/static/img/MB-logo-1.svg" height="24" width="auto"></a>
     </div>
     <div class="centerbox">
-        <strong style="font-size:24px;">${handle}</strong>
+        <strong style="font-size:24px;color:whitesmoke;">${handle}</strong>
         <div class="clearfix"></div>
         <div style="display:none" id="status" class="status"></div>
         <div class="clearfix"></div>
@@ -82,10 +82,10 @@ function updateStatus (message, type) {
             </div>
             <div class="clearfix"></div>
             <div class="address">
-<!--                <p id="qrcode"><img src="/${model.receivingAddress}/qr"></img></p> -->
+                <p id="qrcode"><img src="/${model.receivingAddress}/qr"></img></p>
 <#setting url_escaping_charset="UTF-8">
-<#assign bitcoinUri="bitcoin:${model.receivingAddress}?label=${handle}&sv&req-sv">
-                <p id="qrcode"><img src="/${bitcoinUri?url}/qr"></img></p>
+<#assign bitcoinUri="bitcoin:${model.receivingAddress}?sv&req-sv">
+<!--                <p id="qrcode"><img src="/${bitcoinUri?url}/qr"></img></p> -->
                 <p id="legacy">${model.receivingAddress}</p>
             </div>
             <p />

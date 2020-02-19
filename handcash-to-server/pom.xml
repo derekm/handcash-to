@@ -38,6 +38,11 @@
     </repository>
   </repositories>
   <dependencies>
+    <dependency>
+      <groupId>org.bitcoinj</groupId>
+      <artifactId>bitcoinj-core</artifactId>
+      <version>0.15.2</version>
+    </dependency>
   	<dependency>
   		<groupId>org.hackunix.handcash</groupId>
   		<artifactId>handcash-to-api</artifactId>
@@ -46,6 +51,21 @@
   	<dependency>
   		<groupId>org.hackunix.handcash</groupId>
   		<artifactId>handcash-io-client</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.hackunix.relayx</groupId>
+  		<artifactId>relayx-io-client</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.hackunix.bsvalias</groupId>
+  		<artifactId>bsvalias-srv</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.hackunix.bsvalias</groupId>
+  		<artifactId>bsvalias-client</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
     <dependency>
@@ -71,7 +91,12 @@
     <dependency>
       <groupId>org.glassfish.jersey.ext</groupId>
       <artifactId>jersey-mvc-freemarker</artifactId>
-      <version>2.27</version>
+      <version>${jersey.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hackunix.jaxrs</groupId>
+      <artifactId>jaxrs-cors-filter</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.github.t1</groupId>
@@ -102,15 +127,10 @@
     	<version>4.12</version>
     	<scope>test</scope>
     </dependency>
-    <dependency>
-    	<groupId>org.bitcoinj</groupId>
-    	<artifactId>bitcoinj-core</artifactId>
-    	<version>0.15-SNAPSHOT</version>
-    	<scope>test</scope>
-    </dependency>
   </dependencies>
   <properties>
     <capsule.maven.plugin.version>1.5.1</capsule.maven.plugin.version>
     <hammock.version>2.1</hammock.version>
+    <jersey.version>2.27</jersey.version>
   </properties>
 </project>

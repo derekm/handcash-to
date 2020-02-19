@@ -17,10 +17,5 @@
       <artifactId>handcash-io-api</artifactId>
       <version>0.0.1-SNAPSHOT</version>
     </dependency>
-    <dependency>
-    	<groupId>org.bitcoinj</groupId>
-    	<artifactId>bitcoinj-core</artifactId>
-    	<version>0.14.7</version>
-    </dependency>
   </dependencies>
 </project>
